@@ -19,6 +19,7 @@ textarea {
 }
 
 body {
+	background: #990033;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -92,25 +93,52 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+article { 
+	background: #990033;
+} 
 
 header
-{ 
-	height: 50px; 	
-	background: black; 
+{  	
+	background: #990033;
+	height: 100%;
 }
 
 header h1
 {
+	font-size: 4em;
 	text-align: center; 
 	letter-spacing: 3px;
-	color: white; 
+	color: transparent; 
+	text-shadow: 2px 2px 2px white;
+	-web-kit-font-smoothing: antialiased;
+}
+
+button { 
+	background: white;
+	color: transparent; 
+	text-shadow: 2px 2px 2px black; 
+	width: 150px; 
+	height: 150px;
+	letter-spacing: 2px; 
+	border: 3px solid #990033;
+} 
+
+button:hover 
+{ 
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	background: #990033; 
+	width: 150px; 
+	border: 3px solid white;
 }
 
 nav
 { 
+	border-top: 2px solid white;
 	height: 100%;
 	width: 100%;
-	border-bottom: 2px solid black;
+	background: #990033;
+	border-bottom: 2px solid white; 
 }
 
 nav ul { 
@@ -120,30 +148,47 @@ nav ul {
 
 nav li 
 {
+	color: transparent; 
+	text-shadow: 2px 2px 2px white; 
 	display: inline-block;
-	margin-left: auto; 
-	margin-right: auto;
-	padding: 5px 30px 5px 30px;
+	background: #990033;
+	vertical-align: middle;
+	margin: 0;
+	padding: 1.5em;
 }
 
 nav a
 {
+	font-size: 1.5em;
 	letter-spacing: 4px;
 	vertical-align: middle;
 }
 
 nav li:hover
 {
-	background: black; 
-	color: white; 
-	
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	background: #990033;
 }
 
 footer { 
 	width: 100%;
-	border-top: 2px solid black; 
-	border-bottom: 2px solid black;
+	height: 100%;
+	border-top: 2px solid white; 
 } 
+
+a 
+{
+	text-decoration: none; 
+	color: transparent; 
+	text-shadow: 1px 1px 1px white;
+}
+
+a:hover 
+{
+	color: white; 
+	text-shadow: 1px 1px 1px black;
+}
 
 h1,
 h2,
@@ -154,12 +199,27 @@ h6,
 p,
 a { 
 	text-align: center;
+	-webkit-font-smoothing: antialiased; 
 } 
 
 h1, 
 h2, 
 h3 { 
-	letter-spacing: 2px;
+	letter-spacing: 5px;
+}
+
+h2,
+h3,
+h4, 
+h5
+{
+	color: white;
+}
+
+h6
+{
+	color: transparent; 
+	text-shadow: 1px 1px 1px white;
 }
 
 p { 
@@ -169,19 +229,43 @@ p {
 .page
 {
 	width: 80%;
+	height: 100%;
 	margin: 0 auto 0 auto; 
-	min-width: 600px;
+	min-width: 800px;
+}
+
+.content
+{
+	margin: 50px;
 }
 
 .tiny { 
 	font-size: 10px;
 }
+
+.yellow { 
+	text-shadow: 2px 2px 2px #FFFF00;
+}
+
+.black { 
+	text-shadow: 2px 2px 2px #330033;
+} 
 	
 article
 {
 	width: 60%
 	margin: 5px auto 5px auto;
 }
+
+#curtaintop { 
+	width: 80%; 
+	height:  300px;
+	position: absolute; 
+	top: 0px; 
+	left: 0px;
+	z-index: -1;
+} 
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -206,7 +290,7 @@ article
 }
 
 /*
- * Hide from both screenreaders and browsers: h5bp.com/u
+ * Hide from both l and browsers: h5bp.com/u
  */
 
 .hidden {
