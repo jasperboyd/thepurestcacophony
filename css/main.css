@@ -124,7 +124,7 @@ button {
 	background: white;
 	color: transparent; 
 	font-size: 1.25em;
-	text-shadow: 2px 2px 2px #336699; 
+	text-shadow: 1px 1px 1px #336699; 
 	width: 200px; 
 	height: 3em;
 	letter-spacing: 2px; 
@@ -231,6 +231,7 @@ h1,
 h2, 
 h3 { 
 	letter-spacing: 5px;
+	text-shadow: 1px 3px 1px black;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -385,6 +386,7 @@ ol
 ol li
 {
 	color: white;
+	text-shadow: 1px 3px 1px black;
 	letter-spacing: 2px;
 	font-size: 3em;
 }
