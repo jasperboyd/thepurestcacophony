@@ -18,6 +18,8 @@ $(document).ready(function(){
 	$OW_LK = $('#OW_LK');
 	$TOW_LYR = $('#TOW_LYR');
 	$CB_LYR = $('#CB_LYR');
+	$NWIF_LYR = $('#NWIF_LYR');
+	
 	
 	$TOW_LK.click(function(){
 		$TOW_LYR.fadeToggle();
@@ -25,6 +27,10 @@ $(document).ready(function(){
 	
 	$CB_LK.click(function(){
 		$CB_LYR.fadeToggle();
+	});
+	
+	$NWIF_LK.click(function(){
+		$NWIF_LYR.fadeToggle(); 
 	});
 	
 	$lyrics.click(function(){
