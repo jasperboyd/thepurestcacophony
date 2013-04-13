@@ -5,9 +5,9 @@ __URL:__ [thepureca.co](thepureca.co)
 
     -JQuery
         -scrolling navigation
-    -Newsletter
-        -setup in mail chimp 
-        -style in website 
+            -work out the kinks
+    -Lyrics 
+        -finish
     -SEO 
     -Cleanup 
     -Optimize
