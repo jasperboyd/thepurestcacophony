@@ -506,6 +506,12 @@ button:hover,
 	margin-right: auto;
 }
 
+.selected
+{
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
 #mce-EMAIL
 {
 	color: #990033;
