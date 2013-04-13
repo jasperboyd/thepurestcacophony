@@ -116,28 +116,15 @@ header h1
 	-web-kit-font-smoothing: antialiased;
 }
 
-button { 
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	display: inline-block;
-	border-radius: 50px;
-	background: white;
-	color: transparent; 
-	font-size: 1.25em;
-	text-shadow: 1px 1px 1px #336699; 
-	width: 200px; 
-	height: 3em;
-	letter-spacing: 2px; 
+#banner
+{
+	display: block;
+	width: 65%;
+	min-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
-} 
-
-button:hover 
-{ 
-	color: white;
-	text-shadow: 2px 2px 2px black;
-	background: #336699;  
-	border: 3px solid white;
+	padding-left: 100px; 
+	padding-right: 100px;
 }
 
 nav
@@ -164,7 +151,7 @@ nav ul {
 nav li 
 {
 	color: transparent; 
-	font-size: 1.5em;
+	font-size: 1.25em;
 	text-shadow: 2px 2px 2px white; 
 	display: inline-block;
 	background: #669966;
@@ -196,7 +183,7 @@ footer {
 	background: #669966;
 	width: 100%;
 	height: 100%;
-	min-width: 600px;
+	min-width: 800px;
 	border-top: 2px solid white; 
 } 
 
@@ -222,9 +209,11 @@ h6,
 li,
 p,
 button,
+label,
 a { 
 	font-family: 'Old Standard TT', serif;
 	text-align: center;
+	-webkit-font-smoothing: antialiased;
 } 
 
 h1, 
@@ -232,7 +221,7 @@ h2,
 h3 { 
 	letter-spacing: 5px;
 	text-shadow: 1px 3px 1px black;
-	-webkit-font-smoothing: antialiased;
+	
 }
 
 h2 
@@ -269,6 +258,11 @@ p .last
 	margin-bottom: 4em;
 }
 
+.hide
+{
+	display: none;
+}
+
 .page
 {
 	width: 80%;
@@ -282,8 +276,8 @@ p .last
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 4em;
-	width: 450px;
-	height: 450px;
+	width: 400px;
+	height: 400px;
 	display: block; 
 	border: 2px solid #669966;
 }
@@ -344,6 +338,17 @@ div .center {
 	border-bottom: 10px solid #669966; 
 }
 
+.initblank
+{
+	display: none; 
+}
+
+.lyrics p
+{ 
+	padding-top: 10px;
+	padding-left: 25px;
+}
+
 .textblock 
 {
 	padding-top: 4em; 
@@ -396,7 +401,6 @@ ol li
 	width: 100%;
 	height: 100%;
 	margin: 0 auto 0 auto; 
-	min-width: 800px;
 }
 
 #selfpromotion
@@ -411,12 +415,13 @@ ol li
 
 #selfpromotion:hover
 {
-	color: #336699;
+	text-shadow: 1px 1px 1px #336699;
 }
 
 #selfpromotion a:hover
 {
-	color: #FFFF00;
+	color: transparent;
+	text-shadow: 1px 1px 1px #FFFF00;
 }
 
 #tinymenu { 
@@ -432,28 +437,84 @@ ol li
 	padding-left: 1em; 
 	padding-right: 1em;
 	border-bottom: 2px solid #336699;
-]
-
-#tinymenu li:hover
-{
-	border-bottom: 5px solid #336699;
 }
 
 #tinymenu a:hover
 {
-	color: #FFF000
+	color: #FFF000;
 }
 
-#curtaintop
-{ 
-	height: 262px;
+#mailform
+{
+	width: 500px;
+	height: 100%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mailform ul 
+{
+	list-style-type: none; 
+	display: table; 
+	margin: 2em auto; 
 	width: 100%;
-	position: absolute; 
-	top: 0px; 
-	left: 0px;
-	z-index: -1;
+}
+
+#mailform li 
+{
+	color: white;
+	display: inline-block;
+	width: 150px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#mailform label
+{
+	font-size: 1.5em;
+	padding-left: 1em;
+}
+
+button,
+.button
+{
+	width: 100%;
+	height: 2em;
+	font-size: 1.5em;
+	text-align: center;
+	background: white; 
+	color: #990033;
+	border: 2px solid #990033;
+	border-radius: 45px;
+	margin-top: 1em; 
+	margin-bottom: 1em; 
+	font-family: 'Old Standard TT', serif;
+}
+
+button:hover,
+.button:hover
+{
 	background: #990033;
-} 
+	color: white;
+	border: 2px solid white; 
+}
+
+.clear
+{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mce-EMAIL
+{
+	color: #990033;
+	text-align: center; 
+	text-shadow: 1px 1px 1px black;
+	width: 100%;
+	height: 2em;
+	font-size: 3em;
+}
 
 /* ==========================================================================
    Helper classes

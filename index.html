@@ -24,15 +24,16 @@
         <div id="curtaintop"></div> 
         
         <header> 
-        		<h1 id="title"><span class="black">The</span> Purest <span class="yellow">Cacophony</span></h1>
+        		<img id="banner" src="img/banner.jpg" alt="The Purest Cacophony">
        	 	</header>    
         <nav>
         	<ul> 
-        		<li><a id="home_lk">Home</a></li>
-        		<li><a id="about_lk">About</a></li>  
+        		<li><a class="lyrics_lk">Lyrics</a></li> 
+        		<li><a class="about_lk">About</a></li>  
         		<!--<li><a id="blog_lk">Blog</a></li>-->
-        		<li><a id="shows_lk">Shows</a>
-        		<li><a id="contact_lk">Contact</a></li> 
+        		<li><a class="shows_lk">Shows</a></li>
+        		<li><a class="contact_lk">Contact</a></li> 
+        		<li><a class="news_lk">Newsletter</li> 
         	</ul> 
         </nav> 
         
@@ -40,21 +41,110 @@
         
         <article class="content"> 
                 
-        	<h2>I Will Not Fall EP</h2> 
-			<img class="albumart" src="img/albumart.jpg">
+			<img class="albumart" src="img/albumart.jpg" alt="The Purest Cacophony's I Will Not Fall EP Album Art">
         	<div class="borderafter"></div> 
-        	<div class="textblock borderafter"> 
-        	<h3> Track Listing </h3> 
+        	<div id="tracklist" class="textblock borderafter"> 
+        	<h3> Track Listing / Lyrics </h3> 
         	<ol>
-        		<li>This Old World</li>
-        		<li>Come Back</li> 
-        		<li>Nor Will I Fall</li>
-        		<li>Never Return</li> 
-        		<li>Our Way</li> 
+        		<li><a id="TOW_LK">This Old World</a></li>
+        		<div id="TOW_LYR" class="lyrics initblank">
+        		<p>
+        			Can't we open a blank page.<br />
+        			Release this room burn the sage, <br />
+        			of old memories we no longer follow, <br />
+        			while remembering we are not as hollow <br /> 
+        		</p> 
+        		<p> 	
+        			<i>We create our own bliss, <br />
+        			nothing else has to exist, <br /> 
+        			we can live in this old world, <br />
+					our expectations unfulfilled. <br /> 
+        			</i>
+        		</p>
+        		<p>	
+        			Can't we reveal old bonds broken, <br /> 
+        			As we feel our thoughts awoken, <br /> 
+        			There's always time for rebuilding, <br />
+        			because we are the strong and we are the willing <br />		
+        		</p>
+        		<p> 	
+        			<i>We create our own bliss, <br />
+        			nothing else has to exist, <br /> 
+        			we can live in this old world, <br />
+					our expectations unfulfilled. <br /> 
+        			</i>
+        		</p>
+        		</div>
+        		<li><a id="CB_LK">Come Back</a></li> 
+        		<div id="CB_LYR" class="lyrics initblank"> 
+        		<p>
+        			I wait for awhile,  <br />
+					I pace and pile on,  <br />
+					all of my dreams.  <br />
+				</p>
+				<p>
+					the more i think,  <br />
+					the slower I go,  <br />
+					it seems,  <br />
+				</p>
+				<p>
+					that I'm stuck upon,  <br /> 
+					something simple,  <br />
+					it's elementary,  <br />
+				</p>
+				<p>
+					come back to me,  <br />
+					come back to me,  <br />
+				</p>
+				<p>
+					im wrapped up in,  <br />
+					things that never,  <br />
+					should have been.  <br />
+				</p>
+				<p>
+					my hopes are spent,  <br />
+					and with them went,  <br />
+					my last defense,  <br />
+				</p>
+				<p>
+					I am an open wound,  <br />
+					alone in this room,  <br />
+					but I am going home soon.  <br />
+				</p>
+				<p>
+					come back to me,  <br />
+					come back to me,  <br />
+				</p>
+				<p>
+					I don't know if I can,  <br />
+					life my life's span,  <br />
+					this far from you.  <br />
+				</p>
+				<p>
+					I haven't a plan,  <br />
+					I can't even command,  <br />
+					my own will.  <br />
+				</p>
+				<p>
+					It stop and it starts,  <br /> 
+					racing with my heart,  <br />
+					while my mind is still,  <br />
+				</p>
+				<p>
+					it can't wait for long,  <br />
+					and I can't stay strong enough,  <br />
+					to get through,  <br />
+				</p>
+				<p>
+					come back to me  <br />
+				</p>
+        		</div> 
+        		<li><a id="NWIF_LK">Nor Will I Fall</a></li>
+        		<li><a id="NR_LK">Never Return</a></li> 
+        		<li><a id="OW_LK">Our Way</a></li> 
         	</ol>
-        	</div>
-        	
-        	<div class="textblock borderafter">
+        	</div>    	
+        	<div id="credits" class="textblock borderafter">
         	<h2> Credits </h2>
         	<h3> Personel </h3> 
         	<p> Jasper Boyd, vocals, guitar, upright, banjolele, melodica </p>
@@ -73,8 +163,7 @@
         	
         	
 			        	
-        	<div class="textblock borderafter">
-        	
+        	<div id="about" class="textblock borderafter">
         	<h2>About</h2> 
         	<img id="profile" src="img/recording.jpg">
         	
@@ -101,20 +190,43 @@
         	</div>
         	<h2>Contact</h2> 
         	<div class="divcenter">
-        		<button>Email</button>
+        		<a href="mailto:jasperboyd@lavabit.com"><button>Email</button></a>
+        		<a id="join_lk"><button>Join Our Newsletter</button></a>
         	</div>
         	</div> 
+        	
+        	<div id="mailform" class="initblank"> 
+        		<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://thepureca.us4.list-manage.com/subscribe/post?u=883c452b158a54cb5f217604f&amp;id=8d747da6dc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div class="mc-field-group">
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group input-group">
+    	<ul id="emailtype">
+    		<li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
+			<li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">text</label></li>
+			<li><input type="radio" value="mobile" name="EMAILTYPE" id="mce-EMAILTYPE-2"><label for="mce-EMAILTYPE-2">mobile</label></li>
+		</ul>
+		</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div><div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	</form>
+	</div>
+	<!--End mc_embed_signup-->
+        	</div>
         	
         </article> 
         </article> 
         <footer> 
         	<h6 id="selfpromotion" class="tiny">Built by <a href="http://jasperboyd.com" target="_blank">Jasper Boyd</a> |  All Rights Reserved The Purest Cacophony | 2013</h6>
         	<ul id="tinymenu">
-        		<li><a>Top</a></li>
-        		<li><a>I Will Not Fall Ep</a></li>
-        		<li><a>About</a></li>
-        		<li><a>Show</a></li> 
-        		<li><a>Contact</a></li> 
+        		<li><a class="menulink top_lk">Top</a></li>
+        		<li><a class="menulink EP_lk">I Will Not Fall EP</a></li>
+        		<li><a class="menulink lyrics_lk">Lyrics</a></li>
+        		<li><a class="menulink about_lk">About</a></li>
         	</ul>
         </footer> 
         <img id="bottomgraphic" src="img/bottom.jpg">
