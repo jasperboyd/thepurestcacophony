@@ -8,9 +8,6 @@ $(document).ready(function(){
 	$top = $('.top_lk');
 	$join = $('#join_lk');
 	$form = $('#mailform'); 
-	
-	$albumart = $('.albumart'); 
-	
 	$TOW_LK = $('#TOW_LK');
 	$CB_LK = $('#CB_LK');
 	$NWIF_LK = $('#NWIF_LK');
@@ -19,6 +16,8 @@ $(document).ready(function(){
 	$TOW_LYR = $('#TOW_LYR');
 	$CB_LYR = $('#CB_LYR');
 	$NWIF_LYR = $('#NWIF_LYR');
+	$NR_LYR = $('#NR_LYR');
+	$OW_LYR = $('#OW_LYR');
 	
 	open = -1; 
 	
@@ -27,27 +26,185 @@ $(document).ready(function(){
 		if (open === -1){ 
 			$TOW_LK.toggleClass("selected");
 			$TOW_LYR.fadeToggle();
+			open = 0; 
 		} else if (open === 0) { 
-		
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle(); 
+			open = -1; 
 		} else if (open === 1) { 
-		
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle(); 
+			open = 1; 
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle();
 		} else if (open === 2) {
-		
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle(); 
+			open = 2; 
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle();
 		} else if (open === 3) { 
-		
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle(); 
+			open = 3; 
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle();
 		} else if (open === 4) { 
-		
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle(); 
+			open = 4;
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle();
 		} 
+		$('html, body').animate({ scrollTop: 800 }, 300);2
 	});
 	
 	$CB_LK.click(function(){
-		$CB_LK.toggleClass("selected");
-		$CB_LYR.fadeToggle();
+		if (open === -1){ 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle();
+			open = 1; 
+		} else if (open === 0) { 
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle(); 
+			open = 1; 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle();
+		} else if (open === 1) { 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle(); 
+			open = -1;
+		} else if (open === 2) {
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle(); 
+			open = 1; 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle();
+		} else if (open === 3) { 
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle(); 
+			open = 1; 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle();
+		} else if (open === 4) { 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle(); 
+			open = 1;
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle();
+		} 
+		$('html, body').animate({ scrollTop: 800 }, 300);
 	});
 	
 	$NWIF_LK.click(function(){
-		$NWIF_LK.toggleClass("selected");
-		$NWIF_LYR.fadeToggle(); 
+		if (open === -1){ 
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle();
+			open = 2; 
+		} else if (open === 0) { 
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle(); 
+			open = 2; 
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle();
+		} else if (open === 1) { 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle(); 
+			open = 2; 
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle();
+		} else if (open === 2) {
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle(); 
+			open = -1; 
+		} else if (open === 3) { 
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle(); 
+			open = 2; 
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle();
+		} else if (open === 4) { 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle(); 
+			open = 2;
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle();
+		}  
+		$('html, body').animate({ scrollTop: 800 }, 300);
+	});
+	
+	$NR_LK.click(function(){
+		if (open === -1){ 
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle();
+			open = 3; 
+		} else if (open === 0) { 
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle(); 
+			open = 3; 
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle();
+		} else if (open === 1) { 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle(); 
+			open = 3;
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle(); 
+		} else if (open === 2) {
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle(); 
+			open = 3; 
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle();
+		} else if (open === 3) { 
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle(); 
+			open = -1; 
+		} else if (open === 4) { 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle(); 
+			open = 3;
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle();
+		} 
+		$('html, body').animate({ scrollTop: 800 }, 300);
+	}); 
+	
+	$OW_LK.click(function(){
+		if (open === -1){ 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle();
+			open = 4; 
+		} else if (open === 0) { 
+			$TOW_LK.toggleClass("selected");
+			$TOW_LYR.fadeToggle(); 
+			open = 4; 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle();
+		} else if (open === 1) { 
+			$CB_LK.toggleClass("selected");
+			$CB_LYR.fadeToggle(); 
+			open = 4; 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle();
+		} else if (open === 2) {
+			$NWIF_LK.toggleClass("selected");
+			$NWIF_LYR.fadeToggle(); 
+			open = 4; 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle();
+		} else if (open === 3) { 
+			$NR_LK.toggleClass("selected");
+			$NR_LYR.fadeToggle(); 
+			open = 4; 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle();
+		} else if (open === 4) { 
+			$OW_LK.toggleClass("selected");
+			$OW_LYR.fadeToggle(); 
+			open = -1;
+		} 
+		$('html, body').animate({ scrollTop: 800 }, 300);
 	});
 	
 	$lyrics.click(function(){
@@ -68,11 +225,6 @@ $(document).ready(function(){
 	
 	$news.click(function(){
 		$('html, body').animate({ scrollTop: 3300 }, 300); 
-	}); 
-	
-	$albumart.click(function(){ 
-		$albumart.fadeToggle(300);
-		//fade in the player
 	}); 	
 	
 	$top.click(function(){
