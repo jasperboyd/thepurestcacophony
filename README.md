@@ -3,14 +3,12 @@ __URL:__ [thepureca.co](thepureca.co)
 
 ##todo
 
-    -JQuery
-        -scrolling navigation
-            -work out the kinks
-    -Lyrics 
-        -finish
-    -SEO 
+    -SEO
+        - images
     -Cleanup 
+        - all
     -Optimize
+        - all
 
 ##future features
 
