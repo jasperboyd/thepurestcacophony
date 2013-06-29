@@ -1,0 +1,362 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+$huge: 59.301px;
+$xlarge: 36.651px; 
+$large: 22.652px;
+$normal: 14px;
+$tiny: 6.18px;
+@include establish-baseline;
+
+.center 
+{
+	text-align: center;
+} 
+
+.huge 
+{
+	font-size: $huge;
+	text-shadow: 2px 2px 2px black;
+}
+
+.xlarge  {
+	font-size: $xlarge;
+}
+
+.large
+{
+	font-size: $large;
+}
+
+.tiny 
+{
+	font-size: $tiny;
+} 
+
+$white-brown: #d9f0ff;
+$grey-brown: #635341;
+$light-grey-brown: adjust-lightness($grey-brown, 5);
+$dark-grey-brown: adjust-lightness($grey-brown, -5);
+$darkest-grey-brown: adjust-lightness($grey-brown, -20);
+$light-yellow: #f6ffd9;
+
+.initblank {display: none;}
+
+.links.light-brown {
+	background-color: $light-grey-brown;
+}
+
+/*General Styles*/  
+
+html,
+body { 
+	overflow-x: hidden;
+	background-color: $darkest-grey-brown;
+	line-height: 1.5em;
+}
+
+header,
+article, 
+aside,
+section,
+footer { 
+	box-sizing:border-box;
+  		-moz-box-sizing:border-box;
+  		-webkit-box-sizing:border-box;
+  	padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a,
+nav a:visited,
+footer a,
+footer a:visited,
+a,
+li
+{ 
+	font-family: "Habibi";
+	color: $white-brown;
+} 
+
+p,
+li {
+	font-family: 'alef';
+}
+
+h2, 
+h3, 
+nav a { 
+	text-transform: uppercase;
+} 
+
+h2 {
+	@include adjust-font-size-to($xlarge); 
+	margin-top: 2em;
+	letter-spacing: 3px;
+	
+} 
+
+h3 { 
+	@include adjust-font-size-to($large);
+	font-style: italic; 
+}
+
+p { 
+	@include adjust-font-size-to($normal); 
+	color: $white-brown;	
+} 
+
+a, 
+a:visited { 
+	
+	color: $light-yellow;
+	text-decoration: none;
+} 
+
+a:hover {
+	font-style: italic;
+}
+
+header { 
+	background-color: $grey-brown;
+	width: 100%;
+	padding: 1em;
+	border-bottom: 5px solid $dark-grey-brown;
+	h1 { 
+		@include adjust-font-size-to($huge);
+		text-shadow: 2px 2px 2px black;
+		a {
+			color: $white-brown;
+		} 
+	} 
+} 
+
+nav { 
+	@include adjust-font-size-to($normal);
+	float: left;
+	width: 100%;
+	a,
+	a:visited {
+		background-color: adjust-lightness($grey-brown, 5);
+		display: inline-block;
+		padding: .5em;
+		margin: 0 auto;
+		 box-sizing:border-box;
+  		-moz-box-sizing:border-box;
+  		-webkit-box-sizing:border-box;
+  		border-right: 2px solid adjust-lightness($grey-brown, 5);
+  		border-left: 2px solid adjust-lightness($grey-brown, 5);
+  		border-top: 2px solid adjust-lightness($grey-brown, 5);
+  		letter-spacing: 2px;
+	}
+	a:hover,
+	a:visited:hover,
+	.selected {
+		background-color: $darkest-grey-brown;
+		text-shadow: 2px 2px 2px black;
+		font-style: italic; 
+		border-right: 2px solid adjust-lightness($darkest-grey-brown, 45);
+  		border-left: 2px solid adjust-lightness($darkest-grey-brown, 45);
+  		border-top: 2px solid adjust-lightness($darkest-grey-brown, 45);
+	}
+}
+
+article { 
+	float: left;
+	p {
+		margin-top: 2em;
+		letter-spacing: 1px;
+		text-align: justify; 
+	} 
+	
+} 
+
+aside {
+	float: left;
+	img { 
+		margin-top: .8em;
+		width: 100%;
+	} 
+}
+
+footer {
+	color: $white-brown;
+	clear: both;
+	width: 100%;
+	bottom: 0; 
+	background-color: adjust-lightness($darkest-grey-brown, -10);
+	p { 
+		@include adjust-font-size-to($normal); 
+	} 
+	a { 
+		@include adjust-font-size-to($large);
+	} 
+} 
+
+#player { 
+	
+} 
+
+.albumtext {
+		width: 45%;
+		margin: .8em 1%;
+		border-right: 5px solid $dark-grey-brown;
+		border-bottom: 5px solid $dark-grey-brown;
+		background: $light-grey-brown;
+		padding-bottom: 4em;
+		h2,
+		h3 {text-align: center;}
+}
+
+.text.darkest-brown {
+		background-color: $darkest-grey-brown;
+}
+
+.text { 
+	background-color: $dark-grey-brown;
+	clear: both; 
+	width: 100%; 
+	padding-top: 3em;
+	padding-bottom: 10em;
+	h3 {
+		padding-top: 1em;
+		font-size: $normal;
+	}
+	p {
+		font-size: $normal;
+		max-width: 600px;
+	}
+} 
+
+.links { 
+	width: 100%;
+	background-color: $darkest-grey-brown;
+	padding-top: 10em; 
+	padding-bottom: 10em;
+	h2 { 
+		@include adjust-font-size-to($xlarge);
+	}
+	a { 
+		display: inline-block;
+		@include adjust-font-size-to($large);
+	} 
+} 
+
+.albumart {	
+		width: 49%;
+		padding: 0 3%;
+}
+
+iframe {
+	margin: 1em auto;
+	display: block;
+}
+
+ol { 
+	li {
+		@include adjust-font-size-to($large);
+		text-transform: uppercase;
+		margin-left: 1em;
+	}
+	li a {
+		color: $white-brown;
+	}
+	.lyrics {
+		width: 100%;
+		font-style: italic;
+	}
+	.lyrics p{ 
+		display: block;
+		text-align: left;
+	}
+} 
+
+/*Responsive Design*/
+
+@media screen and (max-width: 600px) and (max-height: 800px){
+	
+	body > header:nth-child(1) > h1:nth-child(1){
+		@include adjust-font-size-to($large);
+		text-shadow: 0px 0px 0px black;
+		text-align: center;
+	} 
+	
+	nav {
+		background-color: adjust-lightness($grey-brown, 5);
+		a,
+		a:visited {
+			@include adjust-font-size-to($normal);
+		}
+		 
+		a:hover,
+		a:visited:hover,
+		.selected { 
+			background-color: adjust-lightness($grey-brown, 5);
+			border: 0px solid black;
+		} 
+	}
+	
+	
+	h2, h3 {@include adjust-font-size-to($large);}
+	.links h2, ol li {@include adjust-font-size-to($normal);}
+	ol li { letter-spacing: 1px; }
+	
+	footer { 
+		p, a {@include adjust-font-size-to($normal);}
+		.large {display:none;}
+	}
+} 
+
+/*Height Only*/ 
+@media screen and (max-height: 500px) {
+	aside.albumart { width: 300px; height: 300px; }
+}
+
+
+@media screen and (min-height: 500px) and (max-height: 540px) {
+	aside.albumart { width: 375px; height: 375px; }
+}
+
+@media screen and (min-height: 540px) and (max-height: 580px) {
+	aside.albumart { width: 425px; height: 425px; }
+}
+
+@media screen and (min-height: 580px) {
+	aside.albumart { width: 504px; height: 504px; }
+}
+
+/*Width Only*/ 
+
+@media screen and (max-width: 935px) { 
+	aside.albumart,
+	article.albumtext
+	{ 
+		width: 90%; 
+		margin: .5em 5%;
+	} 
+	.aside.albumart
+	{
+		height: 70%;
+	}
+} 
+
+@media screen and (max-width: 680px) {
+	body > header:nth-child(1) > h1:nth-child(1){
+		@include adjust-font-size-to($xlarge);
+		text-shadow: 0px 0px 0px black;
+	} 
+	nav a {letter-spacing: 0px;}
+	footer {
+		p, a {font-size: $normal;}
+	}	
+} 
