@@ -213,7 +213,7 @@ header h1 {
   text-shadow: 2px 2px 2px black;
 }
 /* line 138, ../sass/screen.scss */
-header h1 a {
+header h1 #title_link {
   color: #d9f0ff;
 }
 
@@ -237,7 +237,7 @@ nav a:visited {
   border-right: 2px solid #72604b;
   border-left: 2px solid #72604b;
   border-top: 2px solid #72604b;
-  letter-spacing: 2px;
+  letter-spacing: .5em;
 }
 /* line 164, ../sass/screen.scss */
 nav a:hover,
@@ -293,7 +293,7 @@ footer a {
 
 /* line 210, ../sass/screen.scss */
 .albumtext {
-  width: 45%;
+  width: 44%;
   margin: .8em 1%;
   border-right: 5px solid #544637;
   border-bottom: 5px solid #544637;
@@ -384,9 +384,9 @@ ol .lyrics p {
 }
 
 /*Responsive Design*/
-@media screen and (max-width: 600px) and (max-height: 800px) {
+@media screen and (max-width: 650px) and (max-height: 800px) {
   /* line 288, ../sass/screen.scss */
-  body > header:nth-child(1) > h1:nth-child(1) {
+  body > header:nth-child(3) > h1:nth-child(1) {
     font-size: 1.41575em;
     line-height: 2.11902em;
     text-shadow: 0px 0px 0px black;
@@ -395,15 +395,16 @@ ol .lyrics p {
 
   /* line 294, ../sass/screen.scss */
   nav {
+    text-align: center;
     background-color: #72604b;
   }
-  /* line 297, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   nav a,
   nav a:visited {
     font-size: 0.875em;
     line-height: 1.71429em;
   }
-  /* line 303, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   nav a:hover,
   nav a:visited:hover,
   nav .selected {
@@ -468,34 +469,36 @@ ol .lyrics p {
   }
 }
 /*Width Only*/
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 950px) {
   /* line 343, ../sass/screen.scss */
   aside.albumart,
   article.albumtext {
     width: 90%;
+    height: 100%;
     margin: .5em 5%;
   }
-
-  /* line 348, ../sass/screen.scss */
-  .aside.albumart {
-    height: 70%;
-  }
 }
-@media screen and (max-width: 680px) {
-  /* line 354, ../sass/screen.scss */
-  body > header:nth-child(1) > h1:nth-child(1) {
+@media screen and (max-width: 785px) {
+  /* line 351, ../sass/screen.scss */
+  body > header:nth-child(3) > h1:nth-child(1) {
     font-size: 2.29069em;
     line-height: 1.30965em;
     text-shadow: 0px 0px 0px black;
   }
 
-  /* line 358, ../sass/screen.scss */
+  /* line 355, ../sass/screen.scss */
   nav a {
     letter-spacing: 0px;
   }
 
-  /* line 360, ../sass/screen.scss */
+  /* line 357, ../sass/screen.scss */
   footer p, footer a {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 785px) and (max-width: 940px) {
+  /* line 362, ../sass/screen.scss */
+  nav a {
+    letter-spacing: .25em;
   }
 }

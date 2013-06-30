@@ -135,7 +135,7 @@ header {
 	h1 { 
 		@include adjust-font-size-to($huge);
 		text-shadow: 2px 2px 2px black;
-		a {
+		#title_link {
 			color: $white-brown;
 		} 
 	} 
@@ -157,7 +157,7 @@ nav {
   		border-right: 2px solid adjust-lightness($grey-brown, 5);
   		border-left: 2px solid adjust-lightness($grey-brown, 5);
   		border-top: 2px solid adjust-lightness($grey-brown, 5);
-  		letter-spacing: 2px;
+  		letter-spacing: .5em;
 	}
 	a:hover,
 	a:visited:hover,
@@ -208,7 +208,7 @@ footer {
 } 
 
 .albumtext {
-		width: 45%;
+		width: 44%;
 		margin: .8em 1%;
 		border-right: 5px solid $dark-grey-brown;
 		border-bottom: 5px solid $dark-grey-brown;
@@ -283,15 +283,16 @@ ol {
 
 /*Responsive Design*/
 
-@media screen and (max-width: 600px) and (max-height: 800px){
+@media screen and (max-width: 650px) and (max-height: 800px){
 	
-	body > header:nth-child(1) > h1:nth-child(1){
+	body > header:nth-child(3) > h1:nth-child(1){
 		@include adjust-font-size-to($large);
 		text-shadow: 0px 0px 0px black;
 		text-align: center;
 	} 
 	
 	nav {
+		text-align: center;
 		background-color: adjust-lightness($grey-brown, 5);
 		a,
 		a:visited {
@@ -305,7 +306,6 @@ ol {
 			border: 0px solid black;
 		} 
 	}
-	
 	
 	h2, h3 {@include adjust-font-size-to($large);}
 	.links h2, ol li {@include adjust-font-size-to($normal);}
@@ -337,21 +337,18 @@ ol {
 
 /*Width Only*/ 
 
-@media screen and (max-width: 935px) { 
+@media screen and (max-width: 950px) { 
 	aside.albumart,
 	article.albumtext
 	{ 
 		width: 90%; 
+		height: 100%;
 		margin: .5em 5%;
 	} 
-	.aside.albumart
-	{
-		height: 70%;
-	}
 } 
 
-@media screen and (max-width: 680px) {
-	body > header:nth-child(1) > h1:nth-child(1){
+@media screen and (max-width: 785px) {
+	body > header:nth-child(3) > h1:nth-child(1){
 		@include adjust-font-size-to($xlarge);
 		text-shadow: 0px 0px 0px black;
 	} 
@@ -360,3 +357,7 @@ ol {
 		p, a {font-size: $normal;}
 	}	
 } 
+
+@media screen and (min-width: 785px) and (max-width: 940px) {
+	nav a {letter-spacing: .25em;}
+}

@@ -11,6 +11,8 @@
 	<link href="stylesheets/screen.css" rel="stylesheet" type="text/css"> 
 	<link href="stylesheets/ie.css" rel="stylesheet" type="text/css"> 
 	<link href='http://fonts.googleapis.com/css?family=Alef|Habibi' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script src="javascripts/main.js"></script> 
 	<script language="javascript" type="text/javascript">
 	<!--
 	function popitup(url) {
@@ -20,6 +22,10 @@
 	}
 	// -->
 	</script>
+	
+	<link rel="icon" href="../favicon.gif" type="image/gif" />
+	<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+	
 	<script>
  	 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,9 +35,18 @@
 	   ga('create', 'UA-42110425-2', 'pureca.co');
  	   ga('send', 'pageview');
 	</script>
+	
 </head>
 
 <body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<header> 
 		<h1>The Purest Cacophony</h1> 
 		<nav>
@@ -41,6 +56,7 @@
 			 <a href="/lyrics">Lyrics</a> 
 			 <a href="/shows">Shows</a> 
 			 <a href="mailto:jasperboyd@lavabit.com">Booking</a>
+			 <a id="support_link">Support</a>
 		</nav>
 	</header> 
 	<article id="player" class="initblank">
@@ -69,16 +85,10 @@
 	</article>
 	<article class="links">
 		<h2>Support The Purest Cacophony</h2>
-		<p>
-			<a>Like On Facebook</a> & <a>Join The Newsletter</a>
-		</p>
-		<!--<h2>Want To Do More?</h2>
-		<p>
-			<a>Kickstart Vinyl</a> <span class="huge">&</span> <a>Kickstart Tape</a>
-		</p>-->
+		<div class="fb-like" data-href="https://www.facebook.com/purecaco" data-send="false" data-width="320" data-show-faces="true" data-font="verdana" data-action="recommend"></div>	
 	</article>
 	<footer>
-		<p><a>Back To Top </a><span class="large">  |  </span><a href="mailto:jasper@thepureca.co"> Questions or Comments? </a><span class="large"> | </span> Website Handmade by <a href="jboyd.co" target="_blank"> Jasper </a></p>
+		<p><a id="tt_link">Back To Top </a><span class="large">  |  </span><a href="mailto:jasper@thepureca.co"> Questions or Comments? </a><span class="large"> | </span> Website Handmade by <a href="http://www.jboyd.co" target="_blank"> Jasper </a></p>
 	</footer>  
 </body>
 
